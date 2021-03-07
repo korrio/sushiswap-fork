@@ -1,0 +1,17 @@
+{
+  "name": "SushiSwap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "testrpc": "ganache-cli --gasLimit 13000000 -e 100000 --networkId 666"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "1.0.4",
+    "truffle-hdwallet-provider-privkey": "1.0.3"
+  }
+}
