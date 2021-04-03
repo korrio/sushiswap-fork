@@ -1,5 +1,5 @@
-const HDWalletProvider = require('truffle-hdwallet-provider-privkey');
-const HDWalletProvider_ = require("truffle-hdwallet-provider");
+//const HDWalletProvider = require('truffle-hdwallet-provider-privkey');
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 const privateKey = "";
 const privateKeyBsc = "";
 
@@ -13,7 +13,7 @@ const kovanProvider = new HDWalletProvider(
 );
 
 const mnemonic = "";
-const bscProvider = new HDWalletProvider_(mnemonic, 'https://data-seed-prebsc-1-s1.binance.org:8545');
+const bscProvider = new HDWalletProvider(mnemonic, 'https://data-seed-prebsc-1-s1.binance.org:8545');
 
 module.exports = {
   networks: {
